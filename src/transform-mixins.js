@@ -124,7 +124,7 @@ const localProps = {
 
 const transform = (styleObject, customFuncs, parent) => {
 
-  const customProps = merge(customFuncs, localProps);
+  const customProps = merge(localProps, customFuncs);
   const obj = {};
 
   for (var key in styleObject) {
